@@ -5,15 +5,22 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Anh Minh Tran",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.20.0",
     "config": "^3.3.1",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
-    "mongoose": "^5.10.6"
+    "moment": "^2.29.0",
+    "moment-timezone": "^0.5.31",
+    "mongoose": "^5.10.6",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",

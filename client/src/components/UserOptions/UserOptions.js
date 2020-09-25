@@ -8,7 +8,7 @@ class UserOptions extends Component {
   state = {
     form: {
       url: '',
-      interval: '30m',
+      interval: '20m',
       sleepFrom: 0,
       sleepTo: 0,
     },

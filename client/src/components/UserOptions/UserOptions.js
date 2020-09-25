@@ -62,9 +62,8 @@ class UserOptions extends Component {
   }
 
   intervalToSeconds(interval) {
-    if (interval === '5s') return 5;
-
-    if (interval === '30m') return 30 * 60;
+    if (interval === '20m') return 20 * 60;
+    else if (interval === '30m') return 30 * 60;
     else if (interval === '1h') return 60 * 60;
     else if (interval === '2h') return 2 * 60 * 60;
     else if (interval === '3h') return 3 * 60 * 60;
@@ -100,7 +99,7 @@ class UserOptions extends Component {
             name='interval'
             className={classes.narrowInput}
           >
-            <option value='5s'> Testing 5 secs</option>
+            <option value='20m'> 20 minutes</option>
             <option value='30m'> 30 minutes</option>
             <option value='1h'> 1 hour</option>
             <option value='2h'> 2 hours</option>
